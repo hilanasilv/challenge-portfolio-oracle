@@ -425,6 +425,7 @@ form {
   color: #fff;
   font-weight: 500;
   font-size: 0.95rem;
+  font-family: 'Poppins';
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
@@ -438,23 +439,24 @@ textarea.input {
   overflow-y: auto;
 }
 
-.input-container label {
+.input-container ::placeholder {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  padding: 0 0.4rem;
   color: #fafafa;
   font-size: 0.9rem;
   font-weight: 400;
+  font-family: 'Poppins', sans-serif;
   pointer-events: none;
   z-index: 1000;
   transition: 0.5s;
 }
 
-.input-container.textarea label {
+.input-container.textarea ::placeholder {
   top: 1rem;
   transform: translateY(0);
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn {
@@ -462,6 +464,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
+  font-family: 'Poppins', sans-serif;
   color: #709e88;
   line-height: 1;
   border-radius: 25px;
